@@ -36,25 +36,31 @@ Read (GET)
 
 
 Create (POST)
- Request: POST {{base_url}}/posts
- Body:
 
-{
+  Request: POST {{base_url}}/posts
+  
+  Body:
 
-  "title": "My test post",
+ {
 
-  "body": "This is the content of my test post",
+   "title": "My test post",
 
-  "userId": 1
+   "body": "This is the content of my test post",
 
-}
+   "userId": 1
+
+ }
 
  Result: 201 Created  the response echoed back the submitted data plus a new id (101) assigned by the server, confirming a  new resource was created.
 
-(Insert screenshot: POST request and response)
+
+<img width="891" height="823" alt="image" src="https://github.com/user-attachments/assets/1709877d-6e14-48dd-8d1a-031c8a17b914" />
+
 
 Update (PUT)
+
  Request: PUT {{base_url}}/posts/1
+ 
  Body:
 
  {
@@ -71,13 +77,20 @@ Update (PUT)
 
 Result: 200 OK — the response echoed back the updated fields, confirming the existing post was modified.
 
-(Insert screenshot: PUT request and response)
+
+<img width="926" height="788" alt="image" src="https://github.com/user-attachments/assets/b21ac777-14e2-4bd9-9f77-626f70e66e3c" />
+
 
 Delete (DELETE)
+
  Request: DELETE {{base_url}}/posts/1
+ 
  Result: 200 OK with an empty response body, confirming successful deletion.
 
-(Insert screenshot: DELETE request and response)
+
+<img width="920" height="743" alt="image" src="https://github.com/user-attachments/assets/62d4c08f-1879-4ce2-9df7-3f67d4ca0ebc" />
+
+
 
 **Note:** Because JSONPlaceholder is a mock API, none of the POST, PUT, or DELETE operations actually persist changes on the server a follow-up GET request still returns the original, unmodified data. This is expected behavior for this API and does not indicate a failed request; it simply confirms the API is a testing sandbox rather than a live data store.
 
@@ -91,7 +104,10 @@ base_url = https://jsonplaceholder.typicode.com
 
 All requests reference this variable instead of hardcoding the URL, e.g. {{base_url}}/posts/1. This means if the API's base address ever changed, it only needs to be updated in one place rather than in every saved request.
 
-(Insert screenshot: Environment variable setup)
+
+<img width="882" height="324" alt="image" src="https://github.com/user-attachments/assets/22d7048f-70fa-488c-9b91-2f5333211bf5" />
+
+
 
 **5. Automation and Testing**
    
@@ -105,13 +121,19 @@ pm.test("Status code is 200", function () {
 
 This automatically checks, after every send, that the request succeeded  shown as a pass/fail result under the Test Results tab. This test passed successfully.
 
-(Insert screenshot: Test Results tab showing a passed test)
+
+<img width="874" height="768" alt="image" src="https://github.com/user-attachments/assets/49dfdcf4-8162-43f9-88a8-f233fe1ae27e" />
+
+
 
 **6. Collection Runner**
 
 All requests (GET, POST, PUT, DELETE) were saved into a single Postman Collection named CRUD Collection. Using the Collection Runner, all saved requests were executed in sequence, confirming each one returns the expected status code and, where applicable, passes its test script.
 
-(Insert screenshot: Collection Runner execution results)
+
+ <img width="917" height="833" alt="image" src="https://github.com/user-attachments/assets/973f6280-7eec-4d45-9a44-51fccc80ef82" />
+
+
 
 **7. Summary**
    
