@@ -1,5 +1,5 @@
-##Exploring and Testing APIs with Postman
-#1. API Choice and Base URL
+## Exploring and Testing APIs with Postman
+# 1. API Choice and Base URL
 For this assignment I used JSONPlaceholder, a free fake REST API used for testing and prototyping. It supports full CRUD (Create, Read, Update, Delete) operations on resources such as posts, users, and comments, which made it ideal for practicing API testing in Postman without needing a real backend.
 
 Base URL: https://jsonplaceholder.typicode.com
