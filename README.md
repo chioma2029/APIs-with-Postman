@@ -12,7 +12,7 @@ Resource used for CRUD demonstration: /posts
 JSONPlaceholder is a public, unauthenticated API it does not require login credentials or tokens to access its endpoints. To demonstrate an understanding of authentication mechanisms in Postman regardless, I configured a Bearer Token authorization on one of my requests, showing how a real token-protected API would be accessed.
 
 
-<img width="1252" height="837" alt="image" src="https://github.com/user-attachments/assets/bed1b257-97bc-4696-af06-fc75fa87fe7f" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/bed1b257-97bc-4696-af06-fc75fa87fe7f" />
 
 
 
