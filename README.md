@@ -37,20 +37,6 @@ Read (GET)
 
 Create (POST)
 
-  Request: POST {{base_url}}/posts
-  
-  Body:
-
- {
-
-   "title": "My test post",
-
-   "body": "This is the content of my test post",
-
-   "userId": 1
-
- }
-
  Result: 201 Created  the response echoed back the submitted data plus a new id (101) assigned by the server, confirming a  new resource was created.
 
 
@@ -59,21 +45,6 @@ Create (POST)
 
 Update (PUT)
 
- Request: PUT {{base_url}}/posts/1
- 
- Body:
-
- {
-
-   "id": 1,
-
-   "title": "Updated title",
-
-   "body": "This post has been updated",
-
-   "userId": 1
-
- }
 
 Result: 200 OK — the response echoed back the updated fields, confirming the existing post was modified.
 
