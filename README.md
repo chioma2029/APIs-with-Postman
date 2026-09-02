@@ -37,7 +37,7 @@ All four operations were tested against the /posts resource.
 
 **Create (POST)**
 
- Result: 201 Created  the response echoed back the submitted data plus a new id (101) assigned by the server, confirming a  new resource was created.
+ Result: 201 Created the response echoed back the submitted data plus a new id (101) assigned by the server, confirming a  new resource was created.
 
 
 <img width="891" height="823" alt="image" src="https://github.com/user-attachments/assets/1709877d-6e14-48dd-8d1a-031c8a17b914" />
@@ -47,7 +47,7 @@ All four operations were tested against the /posts resource.
 **Update (PUT)**
 
 
-Result: 200 OK — the response echoed back the updated fields, confirming the existing post was modified.
+Result: 200 OK  the response echoed back the updated fields, confirming the existing post was modified.
 
 
 <img width="926" height="788" alt="image" src="https://github.com/user-attachments/assets/b21ac777-14e2-4bd9-9f77-626f70e66e3c" />
